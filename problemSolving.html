@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Page Title</title>
+    </head>
+    <body>
+        <script>
+            // Your JavaScript goes here!
+            let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+            console.log("answer number entered", answer);
+            for (let number = 1; number <= answer; number++) {
+              // console.log(number);
+              if (number % 3 === 0 && number % 5 === 0){
+                console.log("FizzBuzz");
+              } else if (number % 3 === 0) {
+                  console.log("Fizz");
+              } else if (number % 5 === 0) {
+                  console.log("Buzz");
+              } else {
+                console.log(number);
+              }
+            }
+        </script>
+    </body>
+</html>
+
+<!-- 
+
+Pseudo Code:
+When a user inputs a number
+Loop from 1 to the entered number
+If the current number is divisible by 3 then print "Fizz"
+If the current number is divisible by 5 then print "Buzz"
+If the current number is divisible by 3 and 5 then print "FizzBuzz"
+Otherwise print the current number
+
+
+
+
+ -->

@@ -1,0 +1,30 @@
+if (playerSelection === "rock") {
+  if (computerSelection === "rock") {
+    return "Its a tie, play again!";
+  }
+  if (computerSelection === "paper") {
+    return "You lose! Paper beats rock.";
+  }
+  if (computerSelection === "scissors") {
+    return "You win! Rock beats scissors."
+  }
+} else if (playerSelection === "paper") {
+  if (computerSelection === "paper") {
+    return "Its a tie, play again!";
+  }
+  if (computerSelection === "scissors") {
+    return "You lose! Scissors beats paper.";
+  }
+  if (computerSelection === "rock") {
+    return "You win! Paper beats rock."
+  }
+} else if (playerSelection === "scissors") {
+  if (computerSelection === "scissors") {
+    return "Its a tie, play again!";
+  }
+  if (computerSelection === "paper") {
+    return "You win! Scissors beats paper.";
+  }
+  if (computerSelection === "rock") {
+    return "You lose! Rock beats scissors."
+  }
